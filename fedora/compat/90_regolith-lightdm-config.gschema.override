@@ -1,0 +1,21 @@
+# Fedora: Regolith's slick-greeter settings as GSettings defaults.
+# Debian's slick-greeter doesn't ship /etc/lightdm/slick-greeter.conf, so regolith-lightdm-config ships it there.
+# Fedora's slick-greeter owns that file (all keys commented out), so RPM refuses two owners (BRE-015).
+# slick-greeter falls back to x.dm.slick-greeter for keys not set in the conf file. Values mirror etc/lightdm/slick-greeter.conf.
+[x.dm.slick-greeter]
+activate-numlock=false
+background='/usr/share/backgrounds/hmky-e6O3tSO1zH8-unsplash.jpg'
+draw-grid=false
+draw-user-backgrounds=false
+enable-hidpi='auto'
+font-name='DejaVuSansM Nerd Font 16'
+icon-theme-name='Papirus'
+onscreen-keyboard=false
+show-a11y=true
+show-clock=true
+show-hostname=true
+show-keyboard=true
+show-power=true
+show-quit=true
+theme-name='Ayu-Mirage-Dark'
+xft-antialias=true
